@@ -1,0 +1,41 @@
+---
+title: "Peak Width Regressions"
+author: "Mervin Fansler"
+date: "3/20/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load Data
+
+
+```{r}
+df <- read_tsv("../peaks/tmuris.coverage.partial.clean800.tsv.gz")
+head(df)
+```
+
+# Poisson Regression
+
+
+```{r}
+m.poisson <- glm(distance ~ batch + gene, data=df, weights=counts, family='poisson')
+
+summary(m.poisson)
+plot(m.poisson)
+anova(m.poisson)
+```
+
+
+# Gamma Regression
+
+```{r}
+m.gamma <- glm(distance ~ batch + gene, data=df, weights=counts, family=Gamma())
+
+summary(m.gamma)
+plot(m.gamma)
+anova(m.gamma)
+```

@@ -1,0 +1,10 @@
+tmuris.coverage.partial.clean800.tsv.gz filter=lfs diff=lfs merge=lfs -text
+tmuris.coverage.partial.tsv.gz filter=lfs diff=lfs merge=lfs -text
+*.netcdf filter=lfs diff=lfs merge=lfs -text
+results/mixed.full.gammareg.map.pkl filter=lfs diff=lfs merge=lfs -text
+results/arviz.fixed.gene.gammareg.vi.netcdf filter=lfs diff=lfs merge=lfs -text
+results/arviz.mixed.batch.gammareg.vi.netcdf filter=lfs diff=lfs merge=lfs -text
+results/arviz.mixed.full.gammareg.vi.netcdf filter=lfs diff=lfs merge=lfs -text
+results/arviz.mixed.gene.gammareg.vi.netcdf filter=lfs diff=lfs merge=lfs -text
+results/arviz.fixed.batch.gammareg.vi.netcdf filter=lfs diff=lfs merge=lfs -text
+results/arviz.fixed.full.gammareg.vi.netcdf filter=lfs diff=lfs merge=lfs -text
