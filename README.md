@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/177214437.svg)](https://zenodo.org/doi/10.5281/zenodo.10895190)
+
 ## Overview
 This repository provides analysis of peak widths of 10X Chromium 3' end data across 28 libraries from 
 [Tabula Muris](https://doi.org/10.1038/s41586-018-0590-4) at a set of cleavage sites curated for minimal 
